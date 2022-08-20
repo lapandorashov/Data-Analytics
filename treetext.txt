@@ -1,0 +1,136 @@
+|--- "alcohol" <= 10.53
+|   |--- "sulphates" <= 0.57
+|   |   |--- "alcohol" <= 9.75
+|   |   |   |--- "pH" <= 3.54
+|   |   |   |   |--- "chlorides" <= 0.08
+|   |   |   |   |   |--- "citric acid" <= 0.07
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- "citric acid" >  0.07
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- "chlorides" >  0.08
+|   |   |   |   |   |--- "residual sugar" <= 4.80
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- "residual sugar" >  4.80
+|   |   |   |   |   |   |--- class: False
+|   |   |   |--- "pH" >  3.54
+|   |   |   |   |--- class: True
+|   |   |--- "alcohol" >  9.75
+|   |   |   |--- "volatile acidity" <= 0.59
+|   |   |   |   |--- "sulphates" <= 0.47
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- "sulphates" >  0.47
+|   |   |   |   |   |--- "density" <= 1.00
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- "density" >  1.00
+|   |   |   |   |   |   |--- class: True
+|   |   |   |--- "volatile acidity" >  0.59
+|   |   |   |   |--- "sulphates" <= 0.55
+|   |   |   |   |   |--- "fixed acidity" <= 8.60
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- "fixed acidity" >  8.60
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- "sulphates" >  0.55
+|   |   |   |   |   |--- "density" <= 1.00
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- "density" >  1.00
+|   |   |   |   |   |   |--- class: False
+|   |--- "sulphates" >  0.57
+|   |   |--- "total sulfur dioxide" <= 81.50
+|   |   |   |--- "volatile acidity" <= 0.55
+|   |   |   |   |--- "sulphates" <= 0.64
+|   |   |   |   |   |--- "chlorides" <= 0.08
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- "chlorides" >  0.08
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- "sulphates" >  0.64
+|   |   |   |   |   |--- "chlorides" <= 0.09
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- "chlorides" >  0.09
+|   |   |   |   |   |   |--- class: True
+|   |   |   |--- "volatile acidity" >  0.55
+|   |   |   |   |--- "residual sugar" <= 1.85
+|   |   |   |   |   |--- "free sulfur dioxide" <= 3.50
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- "free sulfur dioxide" >  3.50
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- "residual sugar" >  1.85
+|   |   |   |   |   |--- "fixed acidity" <= 6.75
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- "fixed acidity" >  6.75
+|   |   |   |   |   |   |--- class: True
+|   |   |--- "total sulfur dioxide" >  81.50
+|   |   |   |--- "sulphates" <= 1.17
+|   |   |   |   |--- "free sulfur dioxide" <= 52.50
+|   |   |   |   |   |--- "total sulfur dioxide" <= 94.50
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- "total sulfur dioxide" >  94.50
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- "free sulfur dioxide" >  52.50
+|   |   |   |   |   |--- class: True
+|   |   |   |--- "sulphates" >  1.17
+|   |   |   |   |--- "free sulfur dioxide" <= 28.00
+|   |   |   |   |   |--- class: True
+|   |   |   |   |--- "free sulfur dioxide" >  28.00
+|   |   |   |   |   |--- class: False
+|--- "alcohol" >  10.53
+|   |--- "sulphates" <= 0.58
+|   |   |--- "alcohol" <= 11.45
+|   |   |   |--- "pH" <= 3.35
+|   |   |   |   |--- "pH" <= 3.19
+|   |   |   |   |   |--- "sulphates" <= 0.51
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- "sulphates" >  0.51
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- "pH" >  3.19
+|   |   |   |   |   |--- "alcohol" <= 10.85
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- "alcohol" >  10.85
+|   |   |   |   |   |   |--- class: True
+|   |   |   |--- "pH" >  3.35
+|   |   |   |   |--- "residual sugar" <= 2.55
+|   |   |   |   |   |--- "residual sugar" <= 1.95
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- "residual sugar" >  1.95
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- "residual sugar" >  2.55
+|   |   |   |   |   |--- class: False
+|   |   |--- "alcohol" >  11.45
+|   |   |   |--- "volatile acidity" <= 0.51
+|   |   |   |   |--- "residual sugar" <= 10.60
+|   |   |   |   |   |--- class: True
+|   |   |   |   |--- "residual sugar" >  10.60
+|   |   |   |   |   |--- class: False
+|   |   |   |--- "volatile acidity" >  0.51
+|   |   |   |   |--- "chlorides" <= 0.06
+|   |   |   |   |   |--- "density" <= 0.99
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- "density" >  0.99
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- "chlorides" >  0.06
+|   |   |   |   |   |--- "total sulfur dioxide" <= 15.50
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- "total sulfur dioxide" >  15.50
+|   |   |   |   |   |   |--- class: True
+|   |--- "sulphates" >  0.58
+|   |   |--- "pH" <= 2.94
+|   |   |   |--- class: False
+|   |   |--- "pH" >  2.94
+|   |   |   |--- "total sulfur dioxide" <= 61.50
+|   |   |   |   |--- "volatile acidity" <= 0.91
+|   |   |   |   |   |--- "chlorides" <= 0.10
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- "chlorides" >  0.10
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- "volatile acidity" >  0.91
+|   |   |   |   |   |--- class: False
+|   |   |   |--- "total sulfur dioxide" >  61.50
+|   |   |   |   |--- "alcohol" <= 11.35
+|   |   |   |   |   |--- "pH" <= 3.32
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- "pH" >  3.32
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- "alcohol" >  11.35
+|   |   |   |   |   |--- "fixed acidity" <= 12.95
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- "fixed acidity" >  12.95
+|   |   |   |   |   |   |--- class: False
